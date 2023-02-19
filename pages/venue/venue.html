@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!-- Fontawesome library -->
+    <script
+      src="https://kit.fontawesome.com/894bef690e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="venue.css" />
+    <title>Venues</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="nav-container">
+      <!-- Logo Container -->
+      <div class="logo">
+        <img src="/assets/logo.svg" alt="" />
+        <h1>Events<span>HIVE</span></h1>
+        <div class="logo-sub">
+          <p class="conference-text letter-spacing-sm">Conference</p>
+          <p class="letter-spacing-md">Events Planner</p>
+        </div>
+      </div>
+
+      <!-- Nav-Links -->
+      <ul class="nav-links-container">
+        <span class="material-symbols-sharp">
+          <a href="/">house</a>
+        </span>
+        <li><a href="/pages/speaker/speaker.html">Speaker</a></li>
+        <li><a href="/pages/venue/venue.html">Venue</a></li>
+        <li><a href="/pages/schedule/schedule.html">Schedule</a></li>
+      </ul>
+
+     
+    </nav>
+
+    <!-- venues Contianer -->
+    <section class="venues-container">
+      <h2>Venues</h2>
+      <p>
+        Planning a conference or event can be a challenge, but finding the right
+        venue doesn't have to be. Whether you're hosting a small business
+        meeting or a large-scale event, our selection of conference venues has
+        everything you need to make your event a success.
+      </p>
+      <!-- venue List Container -->
+      <!-- Dynamically updated by venue.js -->
+      <div class="venue-hero-container">
+        <ul id="venue-list"></ul>
+        <div class="venue-svg-container">
+          <img src="/assets/venue3.svg" alt="" class="venue-svg" />
+        </div>
+      </div>
+    </section>
+    <script type="module" src="/js/venue.js"></script>
+  </body>
+</html>
